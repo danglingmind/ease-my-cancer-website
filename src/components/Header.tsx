@@ -26,7 +26,7 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#about" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+            <a href="#founder" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               About
             </a>
             <a href="#services" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
@@ -35,7 +35,7 @@ export function Header() {
             <a href="#how-it-works" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               How It Works
             </a>
-            <a href="#testimonials" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+            <a href="#evidence" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               Testimonials
             </a>
             <a href="#contact" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
@@ -69,7 +69,7 @@ export function Header() {
           <div className="md:hidden border-t bg-background">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <a
-                href="#about"
+                href="#founder"
                 className="block px-3 py-2 text-base font-medium text-foreground hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -90,7 +90,7 @@ export function Header() {
                 How It Works
               </a>
               <a
-                href="#testimonials"
+                href="#evidence"
                 className="block px-3 py-2 text-base font-medium text-foreground hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}
               >

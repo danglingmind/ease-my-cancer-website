@@ -117,13 +117,13 @@ export function Footer() {
             © 2024 Easevia Integrative Solutions Pvt. Ltd. All rights reserved.
           </div>
           <div className="flex space-x-6">
-            <a href="#privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+            <a href="/privacy" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
               Privacy Policy
             </a>
-            <a href="#terms" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+            <a href="/terms" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
               Terms & Conditions
             </a>
-            <a href="#refund" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+            <a href="/refund" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
               Refund Policy
             </a>
           </div>

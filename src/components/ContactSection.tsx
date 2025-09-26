@@ -43,13 +43,6 @@ const contactInfo = [
   }
 ]
 
-const legalLinks = [
-  { title: "Privacy Policy", href: "#privacy" },
-  { title: "Terms & Conditions", href: "#terms" },
-  { title: "Refund & Cancellation Policy", href: "#refund" },
-  { title: "Disclaimer", href: "#disclaimer" },
-  { title: "Cookie Policy", href: "#cookies" }
-]
 
 export function ContactSection() {
   return (
@@ -156,27 +149,6 @@ export function ContactSection() {
           </div>
         </div>
 
-        {/* Legal Links */}
-        <div className="mt-16">
-          <Card className="border-0 shadow-lg">
-            <CardContent className="p-8">
-              <h3 className="text-xl font-serif font-bold text-foreground mb-6 text-center">
-                Legal Information
-              </h3>
-              <div className="flex flex-wrap justify-center gap-4">
-                {legalLinks.map((link, index) => (
-                  <Button
-                    key={index}
-                    variant="outline"
-                    className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                  >
-                    {link.title}
-                  </Button>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </div>
 
         {/* Final CTA */}
         <div className="text-center mt-16">
