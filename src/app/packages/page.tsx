@@ -271,9 +271,12 @@ export default function PackagesPage() {
                   <Button 
                     size="lg"
                     className="bg-primary hover:bg-primary/90 text-primary-foreground"
+                    asChild
                   >
-                    Book Free Consultation
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    <a href="/#contact">
+                      Book Free Consultation
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </a>
                   </Button>
                   <Button 
                     variant="outline" 
