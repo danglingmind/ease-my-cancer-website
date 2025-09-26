@@ -119,7 +119,7 @@ export function TreatmentStagesSection() {
                     ))}
                   </div>
                   
-                  <div className="pt-4">
+                  {/* <div className="pt-4">
                     <Button 
                       variant="outline" 
                       className={`group-hover:bg-${stage.color} group-hover:text-${stage.color}-foreground group-hover:border-${stage.color}`}
@@ -127,7 +127,7 @@ export function TreatmentStagesSection() {
                       Learn More About This Stage
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
-                  </div>
+                  </div> */}
                 </CardContent>
               </Card>
             )
@@ -136,7 +136,7 @@ export function TreatmentStagesSection() {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <Card className="bg-gradient-to-r from-primary-50 to-secondary-50 border-0 shadow-xl max-w-4xl mx-auto">
+          {/* <Card className="bg-gradient-to-r from-primary-50 to-secondary-50 border-0 shadow-xl max-w-4xl mx-auto">
             <CardContent className="p-8">
               <h3 className="text-2xl font-serif font-bold text-foreground mb-4">
                 Ready to Start Your Healing Journey?
@@ -161,7 +161,7 @@ export function TreatmentStagesSection() {
                 </Button>
               </div>
             </CardContent>
-          </Card>
+          </Card> */}
         </div>
       </div>
     </section>

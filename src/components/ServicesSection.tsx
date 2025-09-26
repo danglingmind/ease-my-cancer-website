@@ -132,13 +132,13 @@ export function ServicesSection() {
                     ))}
                   </div>
                   
-                  <Button 
+                  {/* <Button 
                     variant="outline" 
                     className="w-full group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary"
                   >
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
+                  </Button> */}
                 </CardContent>
               </Card>
             )

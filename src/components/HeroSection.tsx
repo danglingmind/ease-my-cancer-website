@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Heart, Shield, Users } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 export function HeroSection() {
   return (
@@ -32,19 +33,22 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 z-50"
+                asChild
               >
-                Start Your Healing Journey
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <Link href="/packages">
+                  Start Your Healing Journey
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
               </Button>
               
-              <Button 
+              {/* <Button 
                 variant="outline" 
                 size="lg"
                 className="text-lg px-8 py-6 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
               >
                 Learn More
-              </Button>
+              </Button> */}
             </div>
 
             {/* Trust Indicators */}
@@ -67,16 +71,13 @@ export function HeroSection() {
           {/* Right Content - Hero Image */}
           <div className="relative">
             <div className="relative w-full h-[600px] rounded-3xl overflow-hidden shadow-2xl">
-              {/* Placeholder for hero image - you can replace with actual image */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-100 to-secondary-100 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-32 h-32 mx-auto bg-primary/20 rounded-full flex items-center justify-center">
-                    <Heart className="w-16 h-16 text-primary" />
-                  </div>
-                  <p className="text-lg text-primary font-medium">Hero Image Placeholder</p>
-                  <p className="text-sm text-muted-foreground">Replace with actual hero image</p>
-                </div>
-              </div>
+              <Image
+                src="/hero.png"
+                alt="Woman practicing yoga at home with online guidance"
+                fill
+                className="object-cover object-center"
+                priority
+              />
               
               {/* Floating Elements */}
               <div className="absolute top-8 right-8 bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
@@ -88,7 +89,7 @@ export function HeroSection() {
               
               <div className="absolute bottom-8 left-8 bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-secondary">24/7</div>
+                  <div className="text-2xl font-bold text-muted-foreground">24/7</div>
                   <div className="text-sm text-muted-foreground">Support Available</div>
                 </div>
               </div>

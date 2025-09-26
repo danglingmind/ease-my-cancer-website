@@ -32,14 +32,14 @@ export function Header() {
             <a href="#services" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               Services
             </a>
+            <a href="/packages" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+              Packages
+            </a>
             <a href="#how-it-works" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               How It Works
             </a>
             <a href="#evidence" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-              Testimonials
-            </a>
-            <a href="#contact" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-              Contact
+              Research
             </a>
           </nav>
 
@@ -48,8 +48,11 @@ export function Header() {
             <Button 
               className="bg-primary hover:bg-primary/90 text-primary-foreground"
               size="sm"
+              asChild
             >
-              Schedule Free Consultation
+              <a href="#contact">
+                Schedule Free Consultation
+              </a>
             </Button>
           </div>
 
@@ -83,6 +86,13 @@ export function Header() {
                 Services
               </a>
               <a
+                href="/packages"
+                className="block px-3 py-2 text-base font-medium text-foreground hover:text-primary"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Packages
+              </a>
+              <a
                 href="#how-it-works"
                 className="block px-3 py-2 text-base font-medium text-foreground hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}
@@ -96,19 +106,15 @@ export function Header() {
               >
                 Testimonials
               </a>
-              <a
-                href="#contact"
-                className="block px-3 py-2 text-base font-medium text-foreground hover:text-primary"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
-              </a>
               <div className="px-3 py-2">
                 <Button 
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                   size="sm"
+                  asChild
                 >
-                  Schedule Free Consultation
+                  <a href="#contact" onClick={() => setIsMenuOpen(false)}>
+                    Schedule Free Consultation
+                  </a>
                 </Button>
               </div>
             </div>

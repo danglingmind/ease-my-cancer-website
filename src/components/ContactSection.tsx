@@ -151,7 +151,7 @@ export function ContactSection() {
 
 
         {/* Final CTA */}
-        <div className="text-center mt-16">
+        {/* <div className="text-center mt-16">
           <Card className="bg-gradient-to-r from-primary-50 to-secondary-50 border-0 shadow-xl max-w-4xl mx-auto">
             <CardContent className="p-8">
               <h3 className="text-2xl font-serif font-bold text-foreground mb-4">
@@ -178,7 +178,7 @@ export function ContactSection() {
               </div>
             </CardContent>
           </Card>
-        </div>
+        </div> */}
       </div>
     </section>
   )

@@ -1,4 +1,3 @@
-import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
@@ -6,7 +5,6 @@ import { Separator } from "@/components/ui/separator"
 export default function TermsPage() {
   return (
     <div className="min-h-screen">
-      <Header />
       <main className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">

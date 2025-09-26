@@ -39,19 +39,19 @@ const statistics = [
 
 const testimonials = [
   {
-    quote: "EaseMyCancer gave me back my strength when I thought I had lost it forever. The yoga sessions helped me manage my pain and the community made me feel less alone.",
-    author: "Sarah M.",
-    role: "Breast Cancer Survivor"
+    quote: "The yoga and wellbeing sessions have helped me so much. They’ve made the tough days easier and given me strength I didn’t know I had.",
+    author: "Pooja",
+    role: "Cancer Survivor"
   },
   {
-    quote: "The nutrition guidance was a game-changer. I finally had energy again and my appetite returned. The support team was always there when I needed them.",
-    author: "Michael R.",
-    role: "Lung Cancer Patient"
+    quote: "I have started yoga approximately 6months after my cancer surgery. The journey so far is very fulfilling. Yoga helped me gain physical as well as mental strength. I feel more confident and energetic and it’s every session.",
+    author: "Keerthi",
+    role: "Cancer Survivor"
   },
   {
-    quote: "As a caregiver, I was struggling too. EaseMyCancer supported both me and my wife through her treatment. We couldn't have done it without them.",
-    author: "David L.",
-    role: "Caregiver"
+    quote: "I started yoga around my 3rd cycle of chemo, and the journey so far has been very fulfilling. Yoga has helped me gain both physical and mental strength. The days were really hard, but these sessions felt like a blessing in disguise. I feel more confident, energetic, and stronger after every session.",
+    author: "Preeti",
+    role: "Cancer Survivor"
   }
 ]
 
@@ -140,7 +140,7 @@ export function EvidenceSection() {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <Card className="bg-gradient-to-r from-primary-50 to-secondary-50 border-0 shadow-xl max-w-4xl mx-auto">
             <CardContent className="p-8">
               <h3 className="text-2xl font-serif font-bold text-foreground mb-4">
@@ -167,7 +167,7 @@ export function EvidenceSection() {
               </div>
             </CardContent>
           </Card>
-        </div>
+        </div> */}
       </div>
     </section>
   )

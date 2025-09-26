@@ -90,13 +90,13 @@ export function AdditionalSupportSection() {
                     ))}
                   </div>
                   
-                  <Button 
+                  {/* <Button 
                     variant="outline" 
                     className="w-full group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary"
                   >
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
+                  </Button> */}
                 </CardContent>
               </Card>
             )
@@ -104,7 +104,7 @@ export function AdditionalSupportSection() {
         </div>
 
         {/* Image Placeholder Section */}
-        <div className="mb-16">
+        {/* <div className="mb-16">
           <Card className="bg-gradient-to-br from-accent-50 to-primary-50 border-0 shadow-lg">
             <CardContent className="p-8">
               <div className="text-center mb-8">
@@ -115,9 +115,9 @@ export function AdditionalSupportSection() {
                   Images of our specialized products and services
                 </p>
               </div>
-              
+               */}
               {/* Placeholder for product images */}
-              <div className="grid md:grid-cols-3 gap-6">
+              {/* <div className="grid md:grid-cols-3 gap-6">
                 {[1, 2, 3].map((item) => (
                   <div key={item} className="aspect-square bg-gradient-to-br from-primary-100 to-secondary-100 rounded-xl flex items-center justify-center">
                     <div className="text-center space-y-2">
@@ -131,7 +131,7 @@ export function AdditionalSupportSection() {
               </div>
             </CardContent>
           </Card>
-        </div>
+        </div> */}
 
         {/* Benefits Section */}
         <div className="max-w-4xl mx-auto mb-16">
@@ -172,16 +172,22 @@ export function AdditionalSupportSection() {
                 <Button 
                   size="lg"
                   className="bg-primary hover:bg-primary/90 text-primary-foreground"
+                  asChild
                 >
-                  Explore All Services
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <a href="/packages">
+                    Explore All Services
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </a>
                 </Button>
                 <Button 
                   variant="outline" 
                   size="lg"
                   className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                  asChild
                 >
-                  Get Personalized Recommendations
+                  <a href="#contact">
+                    Get Personalized Recommendations
+                  </a>
                 </Button>
               </div>
             </CardContent>

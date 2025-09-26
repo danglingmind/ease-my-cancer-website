@@ -139,9 +139,12 @@ export function HowItWorksSection() {
                 <Button 
                   size="lg"
                   className="bg-primary hover:bg-primary/90 text-primary-foreground"
+                  asChild
                 >
-                  Start Your Journey Today
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <a href="/packages">
+                    Start Your Journey Today
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </a>
                 </Button>
               </div>
             </CardContent>
