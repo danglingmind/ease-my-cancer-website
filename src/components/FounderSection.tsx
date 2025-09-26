@@ -27,17 +27,15 @@ export function FounderSection() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Side - Founder's Image */}
             <div className="relative">
-              <div className="relative w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
-                {/* Placeholder for Parul's image */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary-100 to-secondary-100 flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <div className="w-32 h-32 mx-auto bg-primary/20 rounded-full flex items-center justify-center">
-                      <User className="w-16 h-16 text-primary" />
-                    </div>
-                    <p className="text-lg text-primary font-medium">Parul's Photo</p>
-                    <p className="text-sm text-muted-foreground">Replace with actual founder image</p>
-                  </div>
-                </div>
+              <div className="relative w-full h-[700px] rounded-3xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/parul-agarwal.jpg"
+                  alt="Parul Agarwal - Founder of EaseMyCancer"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
+                />
               </div>
               
               {/* Floating Badge */}

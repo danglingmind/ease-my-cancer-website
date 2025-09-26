@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
+import Image from "next/image"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -13,9 +14,14 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-primary">
-              EaseMyCancer
-            </div>
+            <Image
+              src="/logo.png"
+              alt="EaseMyCancer Logo"
+              width={340}
+              height={100}
+              className="h-32 w-auto"
+              priority
+            />
           </div>
 
           {/* Desktop Navigation */}
