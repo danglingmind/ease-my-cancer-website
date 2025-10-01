@@ -3,15 +3,11 @@
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { 
-  Heart, 
   Mail, 
   Phone, 
-  MapPin,
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin
+  MapPin
 } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -19,45 +15,38 @@ export function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <Heart className="w-6 h-6 text-primary" />
-              <span className="text-xl font-bold text-primary">EaseMyCancer</span>
+          <div className="space-y-2">
+            <div className="flex items-center space-x-2 py-2">
+              <Image
+                src="/logo.png"
+                alt="EaseMyCancer Logo"
+                width={480}
+                height={144}
+                className="h-36 w-auto"
+                priority
+              />
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Your complete support system for the cancer journey. Holistic care built by those who understand.
             </p>
-            <div className="flex space-x-4">
-              <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary">
-                <Facebook className="w-4 h-4" />
-              </Button>
-              <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary">
-                <Twitter className="w-4 h-4" />
-              </Button>
-              <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary">
-                <Instagram className="w-4 h-4" />
-              </Button>
-              <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary">
-                <Linkedin className="w-4 h-4" />
-              </Button>
-            </div>
+            {/* Social icons removed as requested */}
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
             <h4 className="font-semibold text-foreground">Quick Links</h4>
             <div className="space-y-2">
-              <a href="#about" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                About Us
-              </a>
               <a href="#services" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                Our Services
+                Services
+              </a>
+              <a href="/packages" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                Packages
               </a>
               <a href="#how-it-works" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
                 How It Works
               </a>
-              <a href="#testimonials" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                Testimonials
+              <a href="#evidence" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                Research
               </a>
               <a href="#contact" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
                 Contact
@@ -93,11 +82,11 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-primary" />
-                <span className="text-sm text-muted-foreground">support@easemycancer.com</span>
+                <span className="text-sm text-muted-foreground">hello@easemycancer.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-primary" />
-                <span className="text-sm text-muted-foreground">+91-XXXXXXXXXX</span>
+                <span className="text-sm text-muted-foreground">+91 72591 99955</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 text-primary mt-0.5" />
@@ -114,7 +103,7 @@ export function Footer() {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-sm text-muted-foreground">
-            © 2024 Easevia Integrative Solutions Pvt. Ltd. All rights reserved.
+            © 2025 Easevia Integrative Solutions Pvt. Ltd. All rights reserved.
           </div>
           <div className="flex space-x-6">
             <a href="/privacy" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">

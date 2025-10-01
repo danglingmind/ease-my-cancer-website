@@ -116,8 +116,8 @@ All components are built with shadcn/ui and can be customized:
 ## 📞 Contact Information
 
 **Easevia Integrative Solutions Pvt. Ltd.**
-- Email: support@easemycancer.com
-- Phone: +91-XXXXXXXXXX
+- Email: hello@easemycancer.com
+- Phone: +91 72591 99955
 - Address: 4414, Block 44, Prestige Kew Gardens, Yamlur, Marathahalli Colony, Bangalore, Karnataka, India
 
 ## 📄 Legal

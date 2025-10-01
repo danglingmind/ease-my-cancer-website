@@ -285,8 +285,11 @@ export default function PackagesPage() {
                     variant="outline" 
                     size="lg"
                     className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                    asChild
                   >
-                    Download Brochure
+                    <a href="/brochure.pdf" download>
+                      Download Brochure
+                    </a>
                   </Button>
                 </div>
               </CardContent>

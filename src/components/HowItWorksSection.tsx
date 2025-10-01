@@ -4,37 +4,32 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { 
-  Home, 
-  Phone, 
-  Users, 
   Wifi, 
   Monitor, 
   Heart,
   ArrowRight,
   CheckCircle
 } from "lucide-react"
+import Image from "next/image"
 
 const steps = [
   {
     title: "Live Guided sessions from your home or wherever you are",
     description: "Join our expert-led sessions from the comfort of your own space. No travel required, just a stable internet connection.",
-    icon: Home,
+    image: "/live-classes.png",
     features: ["Expert-led sessions", "From your home", "Flexible timing", "No travel needed"],
-    color: "primary"
   },
   {
     title: "On-call support - Help is just a call away",
     description: "Available 8am–9pm. Our dedicated support team is here whenever you need guidance, answers, or just someone to talk to.",
-    icon: Phone,
+    image: "/oncall-support.png",
     features: ["8 AM - 9 PM availability", "Instant support", "Expert guidance", "Caregiver support"],
-    color: "secondary"
   },
   {
     title: "Real Community - Connect with people and find strength together",
     description: "Join a supportive community of people who understand your journey. Share experiences, find strength, and build lasting connections.",
-    icon: Users,
+    image: "/community.png",
     features: ["Supportive community", "Shared experiences", "Peer support", "Lasting connections"],
-    color: "accent"
   }
 ]
 
@@ -63,7 +58,7 @@ export function HowItWorksSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-primary/10 text-primary hover:bg-primary/10">
-            <Home className="w-4 h-4 mr-2" />
+            <Heart className="w-4 h-4 mr-2" />
             Simple Process
           </Badge>
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
@@ -77,18 +72,28 @@ export function HowItWorksSection() {
         {/* Steps Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {steps.map((step, index) => {
-            const Icon = step.icon
             return (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
-                <CardContent className="p-8 text-center">
-                  <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-${step.color}-100 text-${step.color}-600 mb-6`}>
-                    <Icon className="w-8 h-8" />
+              <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg overflow-hidden">
+                {/* Image Section */}
+                <div className="relative h-48 w-full">
+                  <Image
+                    src={step.image}
+                    alt={step.title}
+                    fill
+                    className="object-cover"
+                  />
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                  {/* Title Overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-xl font-serif font-bold text-white mb-2">
+                      {step.title}
+                    </h3>
                   </div>
-                  
-                  <h3 className="text-xl font-serif font-bold text-foreground mb-4">
-                    {step.title}
-                  </h3>
-                  
+                </div>
+
+                {/* Content Section */}
+                <CardContent className="p-8 text-center">
                   <p className="text-muted-foreground mb-6 leading-relaxed">
                     {step.description}
                   </p>

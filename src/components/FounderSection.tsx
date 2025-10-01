@@ -87,13 +87,6 @@ export function FounderSection() {
                   <span className="text-sm font-medium text-foreground">Personal Experience</span>
                 </div>
               </div>
-
-              <Button 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground"
-                size="lg"
-              >
-                Learn More About Our Mission
-              </Button>
             </div>
           </div>
         </div>

@@ -1,11 +1,22 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
+import Image from "next/image"
 
 export default function PrivacyPage() {
   return (
     <div className="min-h-screen">
       <main className="py-20 bg-background">
         <div className="container mx-auto px-4">
+          <div className="flex justify-center mb-8">
+            <Image
+              src="/logo.png"
+              alt="EaseMyCancer Logo"
+              width={240}
+              height={72}
+              className="h-16 w-auto"
+              priority
+            />
+          </div>
           <div className="max-w-4xl mx-auto">
             <Card className="border-0 shadow-lg">
               <CardHeader className="text-center">
@@ -84,8 +95,8 @@ export default function PrivacyPage() {
                   <p className="text-muted-foreground leading-relaxed">
                     Easevia Integrative Solutions Pvt. Ltd.<br />
                     4414, Block 44, Prestige Kew Gardens, Yamlur, Marathahalli Colony, Bangalore, Karnataka, India<br />
-                    📧 support@easemycancer.com<br />
-                    📞 +91-XXXXXXXXXX
+                    📧 hello@easemycancer.com<br />
+                    📞 +91 72591 99955
                   </p>
                 </div>
 

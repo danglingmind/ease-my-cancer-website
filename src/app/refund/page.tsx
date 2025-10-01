@@ -1,11 +1,22 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
+import Image from "next/image"
 
 export default function RefundPage() {
   return (
     <div className="min-h-screen">
       <main className="py-20 bg-background">
         <div className="container mx-auto px-4">
+          <div className="flex justify-center mb-8">
+            <Image
+              src="/logo.png"
+              alt="EaseMyCancer Logo"
+              width={240}
+              height={72}
+              className="h-16 w-auto"
+              priority
+            />
+          </div>
           <div className="max-w-4xl mx-auto">
             <Card className="border-0 shadow-lg">
               <CardHeader className="text-center">
@@ -55,7 +66,7 @@ export default function RefundPage() {
                     Contact for Refund Requests
                   </h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    For any refund-related queries or exceptional circumstances, please contact our support team at support@easemycancer.com with detailed information about your situation.
+                    For any refund-related queries or exceptional circumstances, please contact our support team at hello@easemycancer.com with detailed information about your situation.
                   </p>
                 </div>
 

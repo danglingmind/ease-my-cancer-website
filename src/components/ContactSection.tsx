@@ -20,13 +20,13 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Support",
-    value: "support@easemycancer.com",
+    value: "hello@easemycancer.com",
     description: "Get in touch with our support team"
   },
   {
     icon: Phone,
     title: "Phone Support",
-    value: "+91-XXXXXXXXXX",
+    value: "+91 72591 99955",
     description: "Call us for immediate assistance"
   },
   {
