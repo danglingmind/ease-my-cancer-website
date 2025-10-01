@@ -90,11 +90,11 @@ export function ServicesSection() {
                     <Star className="w-4 h-4 mr-2" />
                     Expert Guidance
                   </Badge>
-                  <Badge variant="outline" className="border-secondary text-secondary">
+                  <Badge variant="outline" className="border-primary text-primary">
                     <Users className="w-4 h-4 mr-2" />
                     Patient Insights
                   </Badge>
-                  <Badge variant="outline" className="border-accent-500 text-accent-700">
+                  <Badge variant="outline" className="border-primary text-primary">
                     <Heart className="w-4 h-4 mr-2" />
                     Holistic Approach
                   </Badge>

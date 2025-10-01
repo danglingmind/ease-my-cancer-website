@@ -212,9 +212,12 @@ export default function PackagesPage() {
                     <Button 
                       className={`w-full ${pkg.popular ? 'bg-primary hover:bg-primary/90 text-primary-foreground' : 'border-primary text-primary hover:bg-primary hover:text-primary-foreground'}`}
                       variant={pkg.popular ? 'default' : 'outline'}
+                      asChild
                     >
-                      Choose This Plan
-                      <ArrowRight className="ml-2 h-4 w-4" />
+                      <a href="/#contact">
+                        Inquire Now
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </a>
                     </Button>
                   </CardContent>
                 </Card>

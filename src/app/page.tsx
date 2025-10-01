@@ -7,7 +7,6 @@ import { HowItWorksSection } from "@/components/HowItWorksSection"
 import { TreatmentStagesSection } from "@/components/TreatmentStagesSection"
 import { EvidenceSection } from "@/components/EvidenceSection"
 import { AdditionalSupportSection } from "@/components/AdditionalSupportSection"
-import { AffirmationsSection } from "@/components/AffirmationsSection"
 import { ContactSection } from "@/components/ContactSection"
 import { Footer } from "@/components/Footer"
 
@@ -24,7 +23,6 @@ export default function Home() {
         <TreatmentStagesSection />
         <EvidenceSection />
         <AdditionalSupportSection />
-        <AffirmationsSection />
         <ContactSection />
       </main>
       <Footer />

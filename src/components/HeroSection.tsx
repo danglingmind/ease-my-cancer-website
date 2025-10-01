@@ -79,20 +79,7 @@ export function HeroSection() {
                 priority
               />
               
-              {/* Floating Elements */}
-              <div className="absolute top-8 right-8 bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">1000+</div>
-                  <div className="text-sm text-muted-foreground">Lives Touched</div>
-                </div>
-              </div>
               
-              <div className="absolute bottom-8 left-8 bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-muted-foreground">24/7</div>
-                  <div className="text-sm text-muted-foreground">Support Available</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

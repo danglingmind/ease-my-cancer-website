@@ -175,7 +175,7 @@ export function AdditionalSupportSection() {
                   asChild
                 >
                   <a href="/packages">
-                    Explore All Services
+                    Explore All Packages
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </a>
                 </Button>
