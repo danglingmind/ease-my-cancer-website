@@ -4,33 +4,31 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { 
-  Scissors, 
-  Shirt, 
-  Shield, 
   Heart,
   CheckCircle,
   ArrowRight,
   Star,
   Users
 } from "lucide-react"
+import Image from "next/image"
 
 const supportServices = [
   {
     title: "Dermatologist-Approved Wigs",
     description: "High-quality wigs designed for comfort and confidence during treatment",
-    icon: Scissors,
+    image: "/wigs.png",
     features: ["Dermatologist approved", "Comfortable fit", "Natural appearance", "Easy maintenance"]
   },
   {
     title: "Specialized Garments",
     description: "Comfortable, functional clothing designed for cancer patients",
-    icon: Shirt,
+    image: "/garments.png",
     features: ["Comfortable design", "Easy access", "Soft materials", "Functional features"]
   },
   {
     title: "Skin Care Solutions",
     description: "Gentle, effective skincare products for sensitive skin during treatment",
-    icon: Shield,
+    image: "/skincare.png",
     features: ["Gentle formulas", "Sensitive skin safe", "Moisturizing", "Protective"]
   }
 ]
@@ -65,38 +63,40 @@ export function AdditionalSupportSection() {
         {/* Support Services Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {supportServices.map((service, index) => {
-            const Icon = service.icon
             return (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
-                <CardContent className="p-8 text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-6">
-                    <Icon className="w-8 h-8 text-primary" />
+              <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg overflow-hidden">
+                {/* Image Section */}
+                <div className="relative h-48 w-full">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    className="object-cover"
+                  />
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                  {/* Title Overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-xl font-serif font-bold text-white mb-2">
+                      {service.title}
+                    </h3>
                   </div>
-                  
-                  <h3 className="text-xl font-serif font-bold text-foreground mb-4">
-                    {service.title}
-                  </h3>
-                  
+                </div>
+                
+                {/* Content Section */}
+                <CardContent className="p-6">
                   <p className="text-muted-foreground mb-6 leading-relaxed">
                     {service.description}
                   </p>
                   
-                  <div className="space-y-3 mb-6">
+                  <div className="space-y-3">
                     {service.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center justify-center space-x-2">
+                      <div key={featureIndex} className="flex items-center space-x-2">
                         <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
                         <span className="text-sm text-muted-foreground">{feature}</span>
                       </div>
                     ))}
                   </div>
-                  
-                  {/* <Button 
-                    variant="outline" 
-                    className="w-full group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary"
-                  >
-                    Learn More
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button> */}
                 </CardContent>
               </Card>
             )
