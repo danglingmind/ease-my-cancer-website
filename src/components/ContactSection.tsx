@@ -92,16 +92,6 @@ export function ContactSection() {
               </div>
             </div>
 
-            {/* QR Code Placeholder */}
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-6 text-center">
-                <h4 className="font-semibold text-foreground mb-4">Quick Contact</h4>
-                <div className="w-32 h-32 mx-auto bg-gradient-to-br from-primary-100 to-secondary-100 rounded-xl flex items-center justify-center mb-4">
-                  <MessageCircle className="w-16 h-16 text-primary" />
-                </div>
-                <p className="text-sm text-muted-foreground">Scan QR code for instant contact</p>
-              </CardContent>
-            </Card>
           </div>
 
           {/* Contact Form */}

@@ -1,4 +1,3 @@
-import { Footer } from "@/components/Footer"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 
@@ -13,9 +12,6 @@ export default function PrivacyPage() {
                 <CardTitle className="text-4xl font-serif font-bold text-foreground">
                   Privacy Policy
                 </CardTitle>
-                <p className="text-lg text-muted-foreground mt-4">
-                  Last updated: December 2024
-                </p>
               </CardHeader>
               <CardContent className="p-8 space-y-8">
                 <div>
@@ -92,12 +88,17 @@ export default function PrivacyPage() {
                     📞 +91-XXXXXXXXXX
                   </p>
                 </div>
+
+                <div className="text-center pt-8">
+                  <p className="text-sm text-muted-foreground">
+                    Last updated: September 2025
+                  </p>
+                </div>
               </CardContent>
             </Card>
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   )
 }
