@@ -21,78 +21,56 @@ import Link from "next/link"
 
 const packages = [
   {
-    name: "Essential Support",
-    price: "₹2,999",
+    name: "Ease Path",
     duration: "1 Month",
-    description: "Perfect for those starting their healing journey",
+    description: "Start Your Healing Plan (Digital / Online)",
     icon: Heart,
     color: "primary",
     popular: false,
+    originalPrice: "₹12,000",
+    salePrice: "₹9,999",
     services: [
-      "4 Onco Yoga sessions",
-      "2 Nutrition consultations",
-      "1 Emotional wellbeing session",
-      "WhatsApp support (8 AM - 9 PM)",
-      "Basic community access"
+      "12 Group Onco-Yoga & Emotional Wellbeing Sessions",
+      "Personalized Nutrition Plan",
+      "1 Follow-Up Nutrition Consultation",
+      "1 Group Psycho-Oncology Session every week",
+      "6-Day Dedicated Support (8 AM – 9 PM)",
+      "Community & Resources – Access to easy healthy recipes and quick relaxation tools",
+      "Complimentary Wellness Kit to Kickstart Your Program"
     ],
     features: [
-      "Live guided sessions",
-      "Expert guidance",
-      "Community support",
-      "Flexible scheduling"
+      "Expert-led sessions",
+      "Personalized plan",
+      "Community access",
+      "Dedicated support"
     ]
   },
   {
-    name: "Comprehensive Care",
-    price: "₹4,999",
-    duration: "1 Month",
-    description: "Complete holistic support for your healing journey",
+    name: "Thrive 120",
+    duration: "4 Months of Care + 2 Complimentary Weeks",
+    description: "Digital / Online",
     icon: Shield,
     color: "secondary",
     popular: true,
+    originalPrice: "₹48,000",
+    salePrice: "₹29,999",
+    emi: "₹6666/month EMI option",
     services: [
-      "8 Onco Yoga sessions",
-      "4 Nutrition consultations",
-      "2 Emotional wellbeing sessions",
-      "1 Psychology session",
-      "24/7 WhatsApp support",
-      "Full community access",
-      "Progress tracking"
+      "54 Group Onco-Yoga & Emotional Wellbeing Sessions",
+      "Personalized Nutrition Plan",
+      "Weekly 1 follow up Nutrition Consultation",
+      "1 Group Psycho-Oncology Session every week",
+      "1 Skin Care Consultation with Expert Dermatologist",
+      "Progress Tracking",
+      "6-Day Dedicated Support (8 AM – 9 PM)",
+      "Community & Resources – Access to easy healthy recipes and quick relaxation tools",
+      "Complimentary Wellness Kit to Kickstart Your Program"
     ],
     features: [
-      "All Essential Support features",
-      "Psychology support",
+      "Most popular",
       "Progress tracking",
-      "Priority scheduling",
-      "Family caregiver support"
-    ]
-  },
-  {
-    name: "Premium Healing",
-    price: "₹7,999",
-    duration: "1 Month",
-    description: "Complete support system with personalized care",
-    icon: Star,
-    color: "accent",
-    popular: false,
-    services: [
-      "Unlimited Onco Yoga sessions",
-      "Weekly Nutrition consultations",
-      "Weekly Emotional wellbeing sessions",
-      "Weekly Psychology sessions",
-      "24/7 dedicated support",
-      "Premium community access",
-      "Personalized meal plans",
-      "Monthly progress review",
-      "Caregiver support sessions"
-    ],
-    features: [
-      "All Comprehensive Care features",
-      "Unlimited sessions",
-      "Personalized meal plans",
-      "Monthly progress reviews",
-      "Dedicated support coordinator",
-      "Family support sessions"
+      "Dermatology consult",
+      "Priority support"
     ]
   }
 ]
@@ -179,7 +157,13 @@ export default function PackagesPage() {
                     </div>
                     <CardTitle className="text-2xl font-bold text-foreground">{pkg.name}</CardTitle>
                     <div className="space-y-2">
-                      <div className="text-3xl font-bold text-primary">{pkg.price}</div>
+                      <div className="flex items-center justify-center gap-2">
+                        <span className="text-lg text-muted-foreground line-through">{pkg.originalPrice}</span>
+                        <span className="text-3xl font-bold text-primary">{pkg.salePrice}</span>
+                      </div>
+                      {pkg.emi && (
+                        <div className="text-sm text-muted-foreground">{pkg.emi}</div>
+                      )}
                       <div className="text-sm text-muted-foreground">{pkg.duration}</div>
                     </div>
                     <p className="text-muted-foreground">{pkg.description}</p>

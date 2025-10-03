@@ -1,18 +1,12 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { 
   Mail, 
   Phone, 
   MapPin, 
   Clock,
-  ArrowRight,
-  Send,
-  MessageCircle,
   Heart
 } from "lucide-react"
 
@@ -61,8 +55,7 @@ export function ContactSection() {
             Have questions? Need support? We're here to help you every step of the way.
           </p>
         </div>
-
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
@@ -92,50 +85,6 @@ export function ContactSection() {
               </div>
             </div>
 
-          </div>
-
-          {/* Contact Form */}
-          <div>
-            <Card className="border-0 shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-2xl font-serif">Send us a Message</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="text-sm font-medium text-foreground mb-2 block">First Name</label>
-                    <Input placeholder="Your first name" />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium text-foreground mb-2 block">Last Name</label>
-                    <Input placeholder="Your last name" />
-                  </div>
-                </div>
-                
-                <div>
-                  <label className="text-sm font-medium text-foreground mb-2 block">Email</label>
-                  <Input type="email" placeholder="your.email@example.com" />
-                </div>
-                
-                <div>
-                  <label className="text-sm font-medium text-foreground mb-2 block">Phone</label>
-                  <Input type="tel" placeholder="+91 12345 67890" />
-                </div>
-                
-                <div>
-                  <label className="text-sm font-medium text-foreground mb-2 block">Message</label>
-                  <Textarea 
-                    placeholder="Tell us how we can help you..."
-                    rows={4}
-                  />
-                </div>
-                
-                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                  Send Message
-                  <Send className="ml-2 h-4 w-4" />
-                </Button>
-              </CardContent>
-            </Card>
           </div>
         </div>
 
