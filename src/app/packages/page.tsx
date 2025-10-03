@@ -198,8 +198,8 @@ export default function PackagesPage() {
                       variant={pkg.popular ? 'default' : 'outline'}
                       asChild
                     >
-                      <a href="/#contact">
-                        Inquire Now
+                      <a href="#">
+                        Buy Now
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </a>
                     </Button>
