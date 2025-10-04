@@ -110,12 +110,6 @@ export function FamiliarFeelingsSection() {
                     You've selected {selectedFeelings.length} feeling{selectedFeelings.length > 1 ? 's' : ''} that resonate with you. 
                     This is completely normal, and you don't have to face these challenges alone.
                   </p>
-                  <Button 
-                    className="bg-primary hover:bg-primary/90 text-primary-foreground"
-                    size="lg"
-                  >
-                    Let's Start Your Healing Journey
-                  </Button>
                 </div>
               )}
 
