@@ -41,7 +41,7 @@ export default function RefundPage() {
                     Refund Policy
                   </h2>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Once a program/package has been purchased and commenced, we do not provide refunds, as our services involve live experts, dedicated time, and personalized care.
+                    In case of an approved refund, the amount will be credited to your original mode of payment within 4 to 6 working days (and up to 8 working days in certain cases, depending on your bank or payment provider).
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
                     In rare and exceptional situations, refunds may be considered on a case-by-case basis at the discretion of the company, subject to verification.
