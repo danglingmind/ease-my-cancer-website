@@ -27,7 +27,7 @@ const contactInfo = [
     icon: MapPin,
     title: "Office Address",
     value: "Easevia Integrative Solutions Pvt. Ltd.",
-    description: "4414, Block 44, Prestige Kew Gardens, Yamlur, Marathahalli Colony, Bangalore, Karnataka, India"
+    description: "4414, Block 44, Prestige Kew Gardens, Yamlur, Marathahalli Colony, Bangalore, Karnataka, India, PIN Code: 560037"
   },
   {
     icon: Clock,

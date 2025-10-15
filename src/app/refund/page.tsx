@@ -70,6 +70,18 @@ export default function RefundPage() {
                   </p>
                 </div>
 
+                <Separator />
+
+                <div>
+                  <h2 className="text-2xl font-serif font-bold text-foreground mb-4">
+                    Cancellation Policy
+                  </h2>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Once a participant has enrolled and sessions have commenced, cancellations are generally not permitted. However, in the unfortunate event of a medical emergency or critical health condition that prevents the participant from continuing within the first month of joining, EaseMyCancer may review the case and consider a partial or full refund at its discretion.
+                    All such requests must be supported by appropriate medical documentation and will be subject to verification.
+                  </p>
+                </div>
+
                 <div className="text-center pt-8">
                   <p className="text-sm text-muted-foreground">
                     Last updated: September 2025
