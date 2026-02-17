@@ -28,7 +28,7 @@ const packages = [
     color: "primary",
     popular: false,
     originalPrice: "₹16,000",
-    salePrice: "₹9,999 + 5% GST",
+    salePrice: "₹9,999",
     services: [
       "12 Group Onco-Yoga & Emotional Wellbeing Sessions",
       "Personalized Nutrition Plan",
@@ -53,7 +53,7 @@ const packages = [
     color: "secondary",
     popular: true,
     originalPrice: "₹60,000",
-    salePrice: "₹34,999 + 5% GST",
+    salePrice: "₹34,999",
     emi: "₹6666/month EMI option",
     services: [
       "54 Group Onco-Yoga & Emotional Wellbeing Sessions",
@@ -157,9 +157,12 @@ export default function PackagesPage() {
                     </div>
                     <CardTitle className="text-2xl font-bold text-foreground">{pkg.name}</CardTitle>
                     <div className="space-y-2">
-                      <div className="flex items-center justify-center gap-2">
+                      <div className="flex items-center justify-center gap-2 flex-col">
                         <span className="text-lg text-muted-foreground line-through">{pkg.originalPrice}</span>
-                        <span className="text-3xl font-bold text-primary">{pkg.salePrice}</span>
+                        <div className="flex items-center justify-center gap-2 flex-row">
+                          <span className="text-3xl font-bold text-primary">{pkg.salePrice}</span>
+                          <span className="text-sm text-primary font-semibold">+ 5% GST</span>
+                        </div>
                       </div>
                       {pkg.emi && (
                         <div className="text-sm text-muted-foreground">{pkg.emi}</div>
