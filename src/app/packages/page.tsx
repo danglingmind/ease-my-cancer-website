@@ -27,8 +27,8 @@ const packages = [
     icon: Heart,
     color: "primary",
     popular: false,
-    originalPrice: "₹12,000",
-    salePrice: "₹9,999",
+    originalPrice: "₹16,000",
+    salePrice: "₹9,999 + 5% GST",
     services: [
       "12 Group Onco-Yoga & Emotional Wellbeing Sessions",
       "Personalized Nutrition Plan",
@@ -47,13 +47,13 @@ const packages = [
   },
   {
     name: "Thrive 120",
-    duration: "4 Months of Care + 2 Complimentary Weeks",
+    duration: "4 Months of Care + 15 Days Complimentary",
     description: "Digital / Online",
     icon: Shield,
     color: "secondary",
     popular: true,
-    originalPrice: "₹48,000",
-    salePrice: "₹29,999",
+    originalPrice: "₹60,000",
+    salePrice: "₹34,999 + 5% GST",
     emi: "₹6666/month EMI option",
     services: [
       "54 Group Onco-Yoga & Emotional Wellbeing Sessions",
